@@ -140,7 +140,7 @@
     <Link>
       <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
       <AdditionalDependencies>opencv_xobjdetect320d.lib;opencv_objdetect320d.lib;opencv_highgui320d.lib;opencv_videoio320d.lib;opencv_imgcodecs320d.lib;opencv_imgproc320d.lib;opencv_ml320d.lib;opencv_core320d.lib;IlmImfd.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(ProjectDir)..\..\..\..\modules\lib\$(Configuration)\;$(ProjectDir)..\..\..\..\3rdparty\lib\$(Configuration);$(ProjectDir)..\..\..\lib\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\..\..\..\modules\lib\$(Configuration)\;$(ProjectDir)..\..\..\..\3rdparty\lib\$(Configuration);$(ProjectDir)..\..\..\lib\$(Configuration)\;..\..\..\..\3rdparty\ippicv\ippicv_win\lib\ia32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <ImportLibrary>$(SolutionDir)bin\$(Configuration)\opencv_waldboost_detectord.lib</ImportLibrary>
@@ -193,7 +193,7 @@
     <Link>
       <AdditionalOptions> /machine:X64 /debug %(AdditionalOptions)</AdditionalOptions>
       <AdditionalDependencies>opencv_xobjdetect320d.lib;opencv_objdetect320d.lib;opencv_highgui320d.lib;opencv_videoio320d.lib;opencv_imgcodecs320d.lib;opencv_imgproc320d.lib;opencv_ml320d.lib;opencv_core320d.lib;IlmImfd.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(ProjectDir)..\..\..\..\modules\lib\$(Configuration)-$(Platform);$(ProjectDir)..\..\..\..\3rdparty\lib\$(Configuration)-$(Platform);$(ProjectDir)..\..\..\lib\$(Configuration)-$(Platform);$(ProjectDir)..\..\..\..\contrib\lib\$(Configuration)-$(Platform)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\..\..\..\modules\lib\$(Configuration)-$(Platform);$(ProjectDir)..\..\..\..\3rdparty\lib\$(Configuration)-$(Platform);$(ProjectDir)..\..\..\lib\$(Configuration)-$(Platform);$(ProjectDir)..\..\..\..\contrib\lib\$(Configuration)-$(Platform)\;..\..\..\..\3rdparty\ippicv\ippicv_win\lib\intel64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <ImportLibrary>$(SolutionDir)bin\$(Configuration)\opencv_waldboost_detectord.lib</ImportLibrary>
@@ -245,7 +245,7 @@
     <Link>
       <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
       <AdditionalDependencies>opencv_xobjdetect320.lib;opencv_objdetect320.lib;opencv_highgui320.lib;opencv_videoio320.lib;opencv_imgcodecs320.lib;opencv_imgproc320.lib;opencv_ml320.lib;opencv_core320.lib;IlmImf.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(ProjectDir)..\..\..\..\modules\lib\$(Configuration)\;$(ProjectDir)..\..\..\..\3rdparty\lib\$(Configuration);$(ProjectDir)..\..\..\lib\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\..\..\..\modules\lib\$(Configuration)\;$(ProjectDir)..\..\..\..\3rdparty\lib\$(Configuration);$(ProjectDir)..\..\..\lib\$(Configuration)\;..\..\..\..\3rdparty\ippicv\ippicv_win\lib\ia32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <ImportLibrary>$(SolutionDir)bin\$(Configuration)\opencv_waldboost_detector.lib</ImportLibrary>
@@ -297,7 +297,7 @@
     <Link>
       <AdditionalOptions> /machine:X64 /debug %(AdditionalOptions)</AdditionalOptions>
       <AdditionalDependencies>opencv_xobjdetect320.lib;opencv_objdetect320.lib;opencv_highgui320.lib;opencv_videoio320.lib;opencv_imgcodecs320.lib;opencv_imgproc320.lib;opencv_ml320.lib;opencv_core320.lib;IlmImf.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(ProjectDir)..\..\..\..\modules\lib\$(Configuration)-$(Platform);$(ProjectDir)..\..\..\..\3rdparty\lib\$(Configuration)-$(Platform);$(ProjectDir)..\..\..\lib\$(Configuration)-$(Platform);$(ProjectDir)..\..\..\..\contrib\lib\$(Configuration)-$(Platform)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\..\..\..\modules\lib\$(Configuration)-$(Platform);$(ProjectDir)..\..\..\..\3rdparty\lib\$(Configuration)-$(Platform);$(ProjectDir)..\..\..\lib\$(Configuration)-$(Platform);$(ProjectDir)..\..\..\..\contrib\lib\$(Configuration)-$(Platform)\;..\..\..\..\3rdparty\ippicv\ippicv_win\lib\intel64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <ImportLibrary>$(SolutionDir)bin\$(Configuration)\opencv_waldboost_detector.lib</ImportLibrary>
@@ -314,6 +314,12 @@
     <ClCompile Include="waldboost_detector.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\..\modules\features2d\opencv_features2d.vcxproj">
+      <Project>{a8696fcd-70aa-31e3-bd18-ac85d2bed14e}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\modules\objdetect\opencv_objdetect.vcxproj">
+      <Project>{0b5ce246-1207-32d0-ae3c-2b017d3a5d9b}</Project>
+    </ProjectReference>
     <ProjectReference Include="..\..\opencv_xobjdetect.vcxproj">
       <Project>{46b73045-0225-4e65-b095-2138c4b797e6}</Project>
     </ProjectReference>

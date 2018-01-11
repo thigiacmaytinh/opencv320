@@ -143,7 +143,7 @@
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_DEBUG;_VARIADIC_MAX=10;EXCLUDE_MIF_SUPPORT;EXCLUDE_PNM_SUPPORT;EXCLUDE_BMP_SUPPORT;EXCLUDE_RAS_SUPPORT;EXCLUDE_JPG_SUPPORT;EXCLUDE_PGX_SUPPORT;JAS_WIN_MSVC_BUILD;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
-      <ProgramDataBaseFileName>$(ProjectDir)..\..\3rdparty\lib\Debug\libjasperd.pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>$(ProjectDir)..\..\3rdparty\lib\Debug-x64\libjasperd.pdb</ProgramDataBaseFileName>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_DEBUG;_VARIADIC_MAX=10;EXCLUDE_MIF_SUPPORT;EXCLUDE_PNM_SUPPORT;EXCLUDE_BMP_SUPPORT;EXCLUDE_RAS_SUPPORT;EXCLUDE_JPG_SUPPORT;EXCLUDE_PGX_SUPPORT;JAS_WIN_MSVC_BUILD;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -219,7 +219,7 @@
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;_VARIADIC_MAX=10;EXCLUDE_MIF_SUPPORT;EXCLUDE_PNM_SUPPORT;EXCLUDE_BMP_SUPPORT;EXCLUDE_RAS_SUPPORT;EXCLUDE_JPG_SUPPORT;EXCLUDE_PGX_SUPPORT;JAS_WIN_MSVC_BUILD;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
-      <ProgramDataBaseFileName>$(ProjectDir)..\..\3rdparty\lib\Release\libjasper.pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>$(ProjectDir)..\..\3rdparty\lib\Release-x64\libjasper.pdb</ProgramDataBaseFileName>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;_VARIADIC_MAX=10;EXCLUDE_MIF_SUPPORT;EXCLUDE_PNM_SUPPORT;EXCLUDE_BMP_SUPPORT;EXCLUDE_RAS_SUPPORT;EXCLUDE_JPG_SUPPORT;EXCLUDE_PGX_SUPPORT;JAS_WIN_MSVC_BUILD;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>

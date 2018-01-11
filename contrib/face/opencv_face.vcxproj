@@ -91,7 +91,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalIncludeDirectories>$(ProjectDir)..\..\3rdparty\ippicv\ippicv_win\include;$(SolutionDir);$(ProjectDir)include;$(ProjectDir)src;$(ProjectDir);$(SolutionDir)lib\opencv320\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\3rdparty\ippicv\ippicv_win\include;$(SolutionDir);$(ProjectDir)include;$(ProjectDir)src;$(ProjectDir);$(SolutionDir)lib\opencv320\include;..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Debug/</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsCpp</CompileAs>
@@ -148,7 +148,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalIncludeDirectories>$(ProjectDir)..\..\3rdparty\ippicv\ippicv_win\include;$(SolutionDir);$(ProjectDir)include;$(ProjectDir)src;$(ProjectDir);$(SolutionDir)lib\opencv320\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\3rdparty\ippicv\ippicv_win\include;$(SolutionDir);$(ProjectDir)include;$(ProjectDir)src;$(ProjectDir);$(SolutionDir)lib\opencv320\include;..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Debug/</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <CompileAs>CompileAsCpp</CompileAs>
@@ -205,7 +205,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
       <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalIncludeDirectories>$(ProjectDir)..\..\3rdparty\ippicv\ippicv_win\include;$(SolutionDir);$(ProjectDir)include;$(ProjectDir)src;$(ProjectDir);$(SolutionDir)lib\opencv320\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\3rdparty\ippicv\ippicv_win\include;$(SolutionDir);$(ProjectDir)include;$(ProjectDir)src;$(ProjectDir);$(SolutionDir)lib\opencv320\include;..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Release/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -261,7 +261,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
       <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalIncludeDirectories>$(ProjectDir)..\..\3rdparty\ippicv\ippicv_win\include;$(SolutionDir);$(ProjectDir)include;$(ProjectDir)src;$(ProjectDir);$(SolutionDir)lib\opencv320\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\3rdparty\ippicv\ippicv_win\include;$(SolutionDir);$(ProjectDir)include;$(ProjectDir)src;$(ProjectDir);$(SolutionDir)lib\opencv320\include;..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>Release/</AssemblerListingLocation>
       <CompileAs>CompileAsCpp</CompileAs>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>

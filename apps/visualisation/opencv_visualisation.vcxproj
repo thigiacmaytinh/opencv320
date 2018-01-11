@@ -65,6 +65,9 @@
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <Import Project="..\..\OpenCV320_Release_x64.props" />
   </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="..\..\OpenCV320_Debug_x64.props" />
+  </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
@@ -137,7 +140,7 @@
     <Link>
       <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
       <AdditionalDependencies>..\..\3rdparty\ippicv\ippicv_win\lib\ia32\ippicvmt.lib;opencv_highgui320d.lib;opencv_videoio320d.lib;opencv_imgcodecs320d.lib;opencv_imgproc320d.lib;opencv_core320d.lib;zlibd.lib;IlmImfd.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(ProjectDir)..\..\modules\lib\$(Configuration)\;$(ProjectDir)..\..\3rdparty\lib\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\..\modules\lib\$(Configuration)\;$(ProjectDir)..\..\3rdparty\lib\$(Configuration);..\..\3rdparty\ippicv\ippicv_win\lib\ia32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <ImportLibrary>$(SolutionDir)bin\$(Configuration)/opencv_visualisationd.lib</ImportLibrary>
@@ -189,12 +192,12 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:X64 /debug %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>..\..\3rdparty\ippicv\ippicv_win\lib\ia32\ippicvmt.lib;opencv_highgui320d.lib;opencv_videoio320d.lib;opencv_imgcodecs320d.lib;opencv_imgproc320d.lib;opencv_core320d.lib;zlibd.lib;IlmImfd.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(ProjectDir)..\..\modules\lib\$(Configuration)\;$(ProjectDir)..\..\3rdparty\lib\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>..\..\3rdparty\ippicv\ippicv_win\lib\intel64\ippicvmt.lib;opencv_highgui320d.lib;opencv_videoio320d.lib;opencv_imgcodecs320d.lib;opencv_imgproc320d.lib;opencv_core320d.lib;zlibd.lib;IlmImfd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\..\modules\lib\$(Configuration)-x64;$(ProjectDir)..\..\3rdparty\lib\$(Configuration)-x64;..\..\3rdparty\ippicv\ippicv_win\lib\intel64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>$(SolutionDir)bin\$(Configuration)/opencv_visualisationd.lib</ImportLibrary>
-      <ProgramDataBaseFile>$(SolutionDir)bin\$(Configuration)/opencv_visualisationd.pdb</ProgramDataBaseFile>
+      <ImportLibrary>$(SolutionDir)bin\$(Configuration)-x64\opencv_visualisationd.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(SolutionDir)bin\$(Configuration)-x64\opencv_visualisationd.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
       <Version>
       </Version>
@@ -242,7 +245,7 @@
     <Link>
       <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
       <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\3rdparty\ippicv\ippicv_win\lib\ia32\ippicvmt.lib;opencv_highgui320.lib;opencv_videoio320.lib;opencv_imgcodecs320.lib;opencv_imgproc320.lib;opencv_core320.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(ProjectDir)..\..\modules\lib\$(Configuration)\;$(ProjectDir)..\..\3rdparty\lib\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\..\modules\lib\$(Configuration)\;$(ProjectDir)..\..\3rdparty\lib\$(Configuration);..\..\3rdparty\ippicv\ippicv_win\lib\ia32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <ImportLibrary>$(SolutionDir)bin\$(Configuration)/opencv_visualisation.lib</ImportLibrary>
@@ -293,12 +296,12 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:X64 /debug %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\3rdparty\ippicv\ippicv_win\lib\ia32\ippicvmt.lib;opencv_highgui320.lib;opencv_videoio320.lib;opencv_imgcodecs320.lib;opencv_imgproc320.lib;opencv_core320.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(ProjectDir)..\..\modules\lib\$(Configuration)\;$(ProjectDir)..\..\3rdparty\lib\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>..\..\3rdparty\ippicv\ippicv_win\lib\intel64\ippicvmt.lib;opencv_highgui320.lib;opencv_videoio320.lib;opencv_imgcodecs320.lib;opencv_imgproc320.lib;opencv_core320.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\..\modules\lib\$(Configuration)-x64;$(ProjectDir)..\..\3rdparty\lib\$(Configuration)-x64;..\..\3rdparty\ippicv\ippicv_win\lib\intel64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>$(SolutionDir)bin\$(Configuration)/opencv_visualisation.lib</ImportLibrary>
-      <ProgramDataBaseFile>$(SolutionDir)bin\$(Configuration)/opencv_visualisation.pdb</ProgramDataBaseFile>
+      <ImportLibrary>$(SolutionDir)bin\$(Configuration)-x64\opencv_visualisation.lib</ImportLibrary>
+      <ProgramDataBaseFile>$(SolutionDir)bin\$(Configuration)-x64\opencv_visualisation.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
       <Version>
       </Version>
@@ -309,6 +312,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="opencv_visualisation.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\modules\features2d\opencv_features2d.vcxproj">
+      <Project>{a8696fcd-70aa-31e3-bd18-ac85d2bed14e}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\modules\videoio\opencv_videoio.vcxproj">
+      <Project>{7e8dcdc6-dbb6-394e-b1c2-c1cbdc990655}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

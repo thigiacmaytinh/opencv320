@@ -140,7 +140,7 @@
     <Link>
       <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
       <AdditionalDependencies>..\..\3rdparty\ippicv\ippicv_win\lib\ia32\ippicvmt.lib;opencv_core320d.lib;opencv_imgcodecs320d.lib;opencv_highgui320d.lib;opencv_imgproc320d.lib;opencv_objdetect320d.lib;opencv_features2d320d.lib;opencv_ml320d.lib;opencv_videoio320d.lib;opencv_flann320d.lib;IlmImfd.lib;zlibd.lib;libjasperd.lib;libjpegd.lib;libpngd.lib;libtiffd.lib;libwebpd.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(ProjectDir)..\..\modules\lib\$(Configuration)\;$(ProjectDir)..\..\3rdparty\lib\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\..\modules\lib\$(Configuration)\;$(ProjectDir)..\..\3rdparty\lib\$(Configuration);..\..\3rdparty\ippicv\ippicv_win\lib\ia32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <ImportLibrary>$(SolutionDir)bin\$(Configuration)/opencv_traincascaded.lib</ImportLibrary>
@@ -192,8 +192,8 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:X64 /debug %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>..\..\3rdparty\ippicv\ippicv_win\lib\ia32\ippicvmt.lib;opencv_core320d.lib;opencv_imgcodecs320d.lib;opencv_highgui320d.lib;opencv_imgproc320d.lib;opencv_objdetect320d.lib;opencv_features2d320d.lib;opencv_ml320d.lib;opencv_videoio320d.lib;opencv_flann320d.lib;IlmImfd.lib;zlibd.lib;libjasperd.lib;libjpegd.lib;libpngd.lib;libtiffd.lib;libwebpd.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(ProjectDir)..\..\modules\lib\$(Configuration)-$(Platform);$(ProjectDir)..\..\3rdparty\lib\$(Configuration)-$(Platform);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>..\..\3rdparty\ippicv\ippicv_win\lib\intel64\ippicvmt.lib;opencv_core320d.lib;opencv_imgcodecs320d.lib;opencv_highgui320d.lib;opencv_imgproc320d.lib;opencv_objdetect320d.lib;opencv_features2d320d.lib;opencv_ml320d.lib;opencv_videoio320d.lib;opencv_flann320d.lib;IlmImfd.lib;zlibd.lib;libjasperd.lib;libjpegd.lib;libpngd.lib;libtiffd.lib;libwebpd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\..\modules\lib\$(Configuration)-$(Platform);$(ProjectDir)..\..\3rdparty\lib\$(Configuration)-$(Platform);..\..\3rdparty\ippicv\ippicv_win\lib\intel64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <ImportLibrary>$(SolutionDir)bin\$(Configuration)/opencv_traincascaded.lib</ImportLibrary>
@@ -245,7 +245,7 @@
     <Link>
       <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
       <AdditionalDependencies>..\..\3rdparty\ippicv\ippicv_win\lib\ia32\ippicvmt.lib;opencv_objdetect320.lib;opencv_calib3d320.lib;opencv_features2d320.lib;opencv_highgui320.lib;opencv_ml320.lib;opencv_videoio320.lib;opencv_imgcodecs320.lib;opencv_imgproc320.lib;opencv_flann320.lib;opencv_core320.lib;IlmImf.lib;zlib.lib;libjasper.lib;libjpeg.lib;libpng.lib;libtiff.lib;libwebp.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(ProjectDir)..\..\modules\lib\$(Configuration)\;$(ProjectDir)..\..\3rdparty\lib\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\..\modules\lib\$(Configuration)\;$(ProjectDir)..\..\3rdparty\lib\$(Configuration);..\..\3rdparty\ippicv\ippicv_win\lib\ia32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <ImportLibrary>$(SolutionDir)bin\$(Configuration)/opencv_traincascade.lib</ImportLibrary>
@@ -296,8 +296,8 @@
     </Midl>
     <Link>
       <AdditionalOptions> /machine:X64 /debug %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>..\..\3rdparty\ippicv\ippicv_win\lib\ia32\ippicvmt.lib;opencv_objdetect320.lib;opencv_calib3d320.lib;opencv_features2d320.lib;opencv_highgui320.lib;opencv_ml320.lib;opencv_videoio320.lib;opencv_imgcodecs320.lib;opencv_imgproc320.lib;opencv_flann320.lib;opencv_core320.lib;IlmImf.lib;zlib.lib;libjasper.lib;libjpeg.lib;libpng.lib;libtiff.lib;libwebp.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(ProjectDir)..\..\modules\lib\$(Configuration)-$(Platform);$(ProjectDir)..\..\3rdparty\lib\$(Configuration)-$(Platform);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>..\..\3rdparty\ippicv\ippicv_win\lib\intel64\ippicvmt.lib;opencv_objdetect320.lib;opencv_calib3d320.lib;opencv_features2d320.lib;opencv_highgui320.lib;opencv_ml320.lib;opencv_videoio320.lib;opencv_imgcodecs320.lib;opencv_imgproc320.lib;opencv_flann320.lib;opencv_core320.lib;IlmImf.lib;zlib.lib;libjasper.lib;libjpeg.lib;libpng.lib;libtiff.lib;libwebp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\..\modules\lib\$(Configuration)-$(Platform);$(ProjectDir)..\..\3rdparty\lib\$(Configuration)-$(Platform);..\..\3rdparty\ippicv\ippicv_win\lib\intel64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <ImportLibrary>$(SolutionDir)bin\$(Configuration)/opencv_traincascade.lib</ImportLibrary>
